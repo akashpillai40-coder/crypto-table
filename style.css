@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 32px 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* controls */
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+  
+  #search {
+    flex: 1;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #16213e;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  #search:focus {
+    border-color: #6c47ff;
+  }
+  
+  #search::placeholder {
+    color: #6b7280;
+  }
+  
+  button {
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #16213e;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  
+  button:hover {
+    background: #6c47ff;
+    border-color: #6c47ff;
+  }
+  
+  /* table */
+  #crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #crypto-table tr {
+    border-bottom: 1px solid #1e2a3a;
+    transition: background 0.15s;
+  }
+  
+  #crypto-table tr:hover {
+    background: #16213e;
+  }
+  
+  #crypto-table td {
+    padding: 14px 12px;
+    font-size: 14px;
+    color: #e5e7eb;
+    vertical-align: middle;
+  }
+  
+  #crypto-table td:first-child {
+    width: 40px;
+  }
+  
+  #crypto-table td img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  /* coin name bold */
+  #crypto-table td:nth-child(2) {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  /* symbol muted */
+  #crypto-table td:nth-child(3) {
+    color: #6b7280;
+    font-size: 13px;
+  }
+  
+  /* price */
+  #crypto-table td:nth-child(4) {
+    font-weight: 500;
+  }
+  
+  /* market cap */
+  #crypto-table td:last-child {
+    color: #9ca3af;
+    font-size: 13px;
+  }
